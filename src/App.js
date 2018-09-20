@@ -35,6 +35,7 @@ class App extends Component {
   }
 
   async _searchCep(cepToSearch) {
+    this._clearAddress();
     this._setLoading(true);
     let { erro, logradouro, bairro, cep, localidade, uf } = await search(cepToSearch);
     

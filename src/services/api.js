@@ -1,4 +1,4 @@
-const URL_BASE = 'http://viacep.com.br/ws/';
+const URL_BASE = 'https://viacep.com.br/ws/';
 const CALLBACK = 'cb';
 const URL_END = `/json/?callback=${CALLBACK}`;
 

@@ -1,0 +1,44 @@
+.AddressViewer {
+  padding: 20px;
+  box-shadow: 0 2px 10px 0 #CCC;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__street {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    font-size: 24px;
+  }
+
+  &__info {
+    list-style: none;
+    padding: 0;
+    line-height: 24px;
+  }
+
+  &__map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 60%; /* aspect ratio */
+    position: relative;
+
+    >iframe {
+      border: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}

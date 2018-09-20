@@ -2,4 +2,39 @@
   background-color: #DDD;
   padding: 20px;
   margin: 20px 0;
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+
+    >input {
+      flex-grow: 1;
+      margin: 0 10px;
+      height: 34px;
+      border: 1px solid #999;
+      padding: 0 10px;
+      font-size: 16px;
+    }
+
+    >button {
+      background-color: #64A5DB;
+      border-radius: 5px;
+      color: #FFF;
+      padding: 10px;
+      font-size: 15px;
+      cursor: pointer;
+
+      &[disabled] {
+        opacity: 0.5;
+        cursor: default;
+      }
+    }
+  }
+
 }

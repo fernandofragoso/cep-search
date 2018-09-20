@@ -18,6 +18,7 @@ class AddressViewer extends Component {
         </ul>
         <div className='AddressViewer__map'>
           <iframe 
+            title="map"
             src={`https://www.google.com/maps/embed/v1/place?q=${this.props.cep}&key=${MAPS_API_KEY}`}>
           </iframe>
         </div>

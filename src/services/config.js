@@ -1,1 +1,1 @@
-export const MAPS_API_KEY = 'AIzaSyBnARNwVS5Uio7mqP9W3cLCUQzPm42ic7g';
+export const MAPS_API_KEY = process.env.REACT_APP_MAPS_API_KEY;

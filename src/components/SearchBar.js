@@ -19,12 +19,14 @@ class SearchBar extends Component {
           <input 
             type='text'
             maxLength='8'
-            pattern="[0-9]*"
             placeholder='Digite o CEP'
             value={this.state.cep}
             onChange={(event) => this._handleChange(event)}
-            onKeyPress={(event) => (event.key === 'Enter' && this.state.cep) ? this._handleSearch() : null}/>
-          <button onClick={() => this._handleSearch()} disabled={!this._isValid()}>Buscar</button>
+            onKeyPress={(event) => (event.key === 'Enter' && this._isValid()) ? this._handleSearch() : null}/>
+          <button 
+            className='SearchBar__button'
+            onClick={() => this._handleSearch()} 
+            disabled={!this._isValid()}>Buscar</button>
         </div>
       </section>
     );
